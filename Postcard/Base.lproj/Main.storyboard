@@ -82,15 +82,6 @@
                                     <rect key="frame" x="17" y="329" width="297" height="29"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNP-6D-IcQ">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="81" width="288" height="75"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxa-KL-Nfo">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.75709272950769269" blue="0.61403689867467448" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,6 +96,24 @@
                                     <action selector="sendMailButtonPressed:" destination="T4I-nP-XIy" eventType="touchUpInside" id="zJ0-QI-qDP"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNP-6D-IcQ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="81" width="288" height="75"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-NO-Bet">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="17" y="173" width="101" height="31"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,8 +121,9 @@
                                 <exclude reference="6h9-IN-GB8"/>
                                 <exclude reference="pQ7-US-xvf"/>
                                 <exclude reference="acN-wb-Ify"/>
-                                <exclude reference="YNP-6D-IcQ"/>
                                 <exclude reference="Wxa-KL-Nfo"/>
+                                <exclude reference="YNP-6D-IcQ"/>
+                                <exclude reference="1fI-NO-Bet"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,8 +131,9 @@
                                 <include reference="6h9-IN-GB8"/>
                                 <include reference="pQ7-US-xvf"/>
                                 <include reference="acN-wb-Ify"/>
-                                <include reference="YNP-6D-IcQ"/>
                                 <include reference="Wxa-KL-Nfo"/>
+                                <include reference="YNP-6D-IcQ"/>
+                                <include reference="1fI-NO-Bet"/>
                             </mask>
                         </variation>
                     </view>
@@ -131,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="pQ7-US-xvf" id="TI3-FE-ZQt"/>
                         <outlet property="mailButton" destination="Wxa-KL-Nfo" id="1eK-5n-bWf"/>
                         <outlet property="messageLabel" destination="YNP-6D-IcQ" id="qqG-HU-Rxe"/>
+                        <outlet property="nameLabel" destination="1fI-NO-Bet" id="QlT-pI-ms9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0D-cL-lsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
